@@ -189,7 +189,7 @@ justify-content: space-around;
     background-color:white;
     margin: 1px;
     width: 33%; 
-    height: 500px;
+    height: 600px;
     position: relative;
  
   }
@@ -202,7 +202,7 @@ justify-content: space-around;
     background-color:White;
     margin: 1px;
     width: 33%; 
-    height: 500px;
+    height: 600px;
     position: relative;
   }
 
@@ -215,7 +215,7 @@ justify-content: space-around;
     background-color:white;
     margin: 1px;
     width: 33%; 
-    height: 500px;
+    height: 600px;
     position: relative;
   }
 
@@ -274,7 +274,26 @@ justify-content: space-around;
   .drop_bands{
     width: 410px;
     height: 200px;
-    background-color: red;
+    background-color: white;
     overflow: scroll;
     line-height: 0.１em
+  }
+  .byond_bands{
+    width: 410px;
+    height: 200px;
+    background-color: wtite;
+    overflow: scroll;
+    line-height: 0.１em
+  }
+  .varon_bands{
+    width: 410px;
+    height: 200px;
+    background-color: white;
+    overflow: scroll;
+    line-height: 0.１em
+  }
+  .flyer{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
   }

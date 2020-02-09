@@ -39,11 +39,13 @@
       <div class= "event1_title">アメリカ村DROP×新宿club SCIENCE×今池3star Presents Wake Up There Tour2019!!-WINTER-</div>
 
  <ul div class="drop_bands">
-<% @title.each do |value| %>
+<% @title_drop.each do |value| %>
     <li><%= value %></li>
 <% end %>
 </ul>
-  <img src= "5532434-191205_FLYjpg.jpg">
+    <div class = "flyer">
+  <img src= "/assets/5532434-191205_FLYjpg.jpg"alt="">
+  </div>
     <div class= "event1_price">
       <p>OP/ST 18:00/18:30</p>
       <p>AVD ¥2,300 DOOR ¥2,800</p>
@@ -56,14 +58,13 @@
 
   <div class= "event2">
       <div class= "event2_title">ビヨロック LOW TON ~BRANDCALL&SETTLE ON Welcome to OSAKA~</div>
-        <ul>
-          <li>HARVEST</li>
-          <li>THIS IS ME</li>
-          <li>SETTLE ON </li>
-          <li>AILEVENT</li>
+        <ul div class="byond_bands">
+       <% @title_beyond.each do |value| %>
+        <li><%= value %></li>
+        <% end %>
         </ul>
         <div class = "flyer">
-        <img src= "138562-191220jpg.jpg">
+        <img src= "/assets/138562-191220jpg.jpg"alt=""width="300" height="200">
        </div>
         <div class= "event2_price">
             <p>OP/ST 17:00/17:30</p>
@@ -74,13 +75,14 @@
 
   <div class= "event3">
       <div class= "event3_title">クアトロ特大感謝祭ワンマン</div>
-      <ul>
-          <li>FIRE ARROW</li>
-          <li>我儘ラキア</li>
-          <li>Pulse Factory</li>
-          <li>暴想ソプラノバイエルン</li>
+      <ul div class="varon_bands">
+       <% @title_varon.each do |value| %>
+        <li><%= value %></li>
+        <% end %>
       </ul>
-      <img src= "234131-FIREARROW10thANNIVERSARYjpg.jpg">
+       <div class = "flyer">
+      <img src= "/assets/234131-FIREARROW10thANNIVERSARYjpg.jpg"alt="">
+      </div>
       <div class= "event3_price">
           <p>OP/ST 17:00/17:30</p>
           <p>AVD ¥2,200 DOOR ¥2,700</p>

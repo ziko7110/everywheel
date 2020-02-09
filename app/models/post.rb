@@ -20,7 +20,7 @@ class Post < ApplicationRecord
 
 # # タイトルを表示
 # @texts=doc.title
-  def self.get_title
+  def self.get_title_drop
     url = 'https://clubdrop.jp/schedule/detail/6006'
     charset = nil
     html = open(url) do |f|
@@ -31,5 +31,33 @@ class Post < ApplicationRecord
     doc = Nokogiri::HTML.parse(html, nil, charset)
     # doc.title
     doc.xpath("//span[@class='artist other_artists']").inner_text.split('/')
+  end
+
+  def self.get_title_beyond
+    url = 'https://beyond-osaka.jp/schedule/detail/6439'
+    charset = nil
+    html = open(url) do |f|
+      charset = f.charset # 文字種別を取得
+      f.read # htmlを読み込んで変数htmlに渡す
+    end
+
+    doc = Nokogiri::HTML.parse(html, nil, charset)
+    # doc.title
+    doc.xpath("//span[@class='artist other_artists']").inner_text.split('/')
+  
+  end
+
+  def self.get_title_varon
+    url = 'https://osaka-varon.jp/schedule/detail/5557'
+    charset = nil
+    html = open(url) do |f|
+      charset = f.charset # 文字種別を取得
+      f.read # htmlを読み込んで変数htmlに渡す
+    end
+
+    doc = Nokogiri::HTML.parse(html, nil, charset)
+    # doc.title
+    doc.xpath("//span[@class='artist other_artists']").inner_text.split('/')
+  
   end
 end
