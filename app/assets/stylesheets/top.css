@@ -28,10 +28,23 @@ h2 {
 }
 
 a  {
+  text-decoration:none;
+}
+.inquiry{
   color:white;
   float: right;
 }
-
+.drop{
+  display: block;
+  margin: 0 auto;
+  color: black;
+}
+.beyond{
+  color: black;
+}
+.varon{
+  color: black;
+}
 
 
 .livehouses {
@@ -275,25 +288,29 @@ justify-content: space-around;
     width: 410px;
     height: 200px;
     background-color: white;
-    overflow: scroll;
-    line-height: 0.１em
+    /* overflow: scroll; */
+    line-height: 0.１em;
+    overflow-y: scroll;
   }
   .byond_bands{
     width: 410px;
     height: 200px;
     background-color: wtite;
-    overflow: scroll;
-    line-height: 0.１em
+    /* overflow: scroll; */
+    line-height: 0.１em;
+    overflow-y: scroll;
   }
   .varon_bands{
     width: 410px;
     height: 200px;
     background-color: white;
-    overflow: scroll;
-    line-height: 0.１em
+    /* overflow: scroll; */
+    line-height: 0.１em;
+    overflow-y: scroll;
   }
   .flyer{
     height: 200px;
     width: 200px;
     margin: 0 auto;
   }
+  
