@@ -313,4 +313,13 @@ justify-content: space-around;
     width: 200px;
     margin: 0 auto;
   }
-  
+  .footer_content{
+    max-width: 860px;
+    margin:0 auto;
+  }
+  .footer_copy{
+    color:white;
+    margin:0 auto;
+    max-width: 400px;
+    margin-top: 35px;
+  }
