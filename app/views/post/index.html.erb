@@ -57,7 +57,9 @@
 
 
   <div class= "event2">
-    <div class= "event2_title">ビヨロック LOW TON ~BRANDCALL&SETTLE ON Welcome to OSAKA~</div>
+    <div class= "event2_title">
+     <div class = "event1_title_name"><%= @event_name_beyond %></div>
+    </div>
       <ul div class="byond_bands">
     <% @title_beyond.each do |value| %>
       <li><%= value %></li>
@@ -74,7 +76,9 @@
 
 
   <div class= "event3">
-      <div class= "event3_title">クアトロ特大感謝祭ワンマン</div>
+      <div class= "event3_title">
+       <div class = "event1_title_name"><%= @event_name_varon %></div>
+      </div>
       <ul div class="varon_bands">
         <% @title_varon.each do |value| %>
           <li><%= value %></li>
