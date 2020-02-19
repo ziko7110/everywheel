@@ -7,4 +7,19 @@ class PostController < ApplicationController
     @title_varon = Post.get_title_varon
     @event_name_varon = Post.get_event_name_varon
   end
+
+  def new
+    @post = Post.new
+  end
+
+  def create
+    Post.create(post_params)
+      redirect_to   root_path
+  end
+
+  private
+  def post_params
+    params.permit(:drop_url, :beyond_url, :varon_url)
+  end
+ 
 end
