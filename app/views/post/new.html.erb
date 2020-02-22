@@ -1,9 +1,8 @@
-
-  <%= form_with url: post_create_path, local: true, method: :POST, class: "search-form" do |form| %>
-      <div class = search_form>  
-        <%= form.text_field :drop_url, placeholder: "ドロップのURLを入力", class: "search" %>
-        <%= form.text_field :beyond_url, placeholder: "ビヨンドのURLを入力", class: "search" %>
-        <%= form.text_field :varon_url, placeholder: "バロンのURLを入力", class: "search" %>
-        <%= form.submit "検索", class: "search-btn"%> 
-       </div>
-  <%end%>
+<%= form_with url: post_create_path, local: true, method: :POST, class: "search-form" do |form| %>
+  <div class = search_form>  
+    <%= form.text_field :drop_url, placeholder: "ドロップのURLを入力", class: "search" %>
+    <%= form.text_field :beyond_url, placeholder: "ビヨンドのURLを入力", class: "search" %>
+    <%= form.text_field :varon_url, placeholder: "バロンのURLを入力", class: "search" %>
+    <%= form.submit "検索", class: "search-btn"%> 
+  </div>
+<%end%>

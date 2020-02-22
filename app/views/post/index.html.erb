@@ -8,100 +8,90 @@
 
 <!-- ここからメイン -->
 
-<header>
-
-  <h1>EVERYWHEEL<span>2019</span></h1>
-  <div class="nav">
-    <a class="inquiry" href=#>問い合わせ</a>
-  </div>
-</header>
-
-
-<!-- 真ん中 -->
- <%= link_to 'URL指定変更', new_post_path,class: "headerlogo" %>
-<h2>TODAY SCHEDULE</h2>
-
 <body>
-<!-- ライブハウス名 -->
-<div class = "livehouses">
-  <div class = "livehouse_names">
-    <div class = "house1"><a class="drop" href="https://clubdrop.jp/">DROP</a></div>
-    <div class = "house2"><a class="beyond" href="https://beyond-osaka.jp/">BEYOND</a></div>
-    <div class = "house3"><a class="varon" href="https://osaka-varon.jp/">VARON</a></div>
-  </div>
-
-
-
-<!-- イベント -->
-
-<div class= 'events'>
-  <div class= "event1">
-    <div class= "event1_title">
-        <div class = "event1_title_name"><%= @event_name %></div>
+  <header>
+    <h1>EVERYWHEEL<span>2019</span></h1>
+    <div class="nav">
+      <a class="inquiry" href=#>問い合わせ</a>
     </div>
- <ul div class="drop_bands">
-<% @title_drop.each do |value| %>
-    <li><%= value %></li>
-<% end %>
-</ul>
-    <div class = "flyer">
-  <img src= "/assets/5532434-191205_FLYjpg.jpg"alt="">
-  </div>
-  <div class= "event1_price">
-    <p>OP/ST 18:00/18:30</p>
-    <p>AVD ¥2,300 DOOR ¥2,800</p>
-  </div>
+  </header>
 
+  <!-- 真ん中 -->
+  <%= link_to 'URL指定変更', new_post_path,class: "headerlogo" %>
+  <h2>TODAY SCHEDULE</h2>
 
-
-  </div>
-
-
-  <div class= "event2">
-    <div class= "event2_title">
-     <div class = "event1_title_name"><%= @event_name_beyond %></div>
+  <!-- ライブハウス名 -->
+  <div class = "livehouses">
+    <div class = "livehouse_names">
+      <div class = "house1"><a class="drop" href="https://clubdrop.jp/">DROP</a></div>
+      <div class = "house2"><a class="beyond" href="https://beyond-osaka.jp/">BEYOND</a></div>
+      <div class = "house3"><a class="varon" href="https://osaka-varon.jp/">VARON</a></div>
     </div>
+
+
+
+  <!-- イベント -->
+
+  <div class= 'events'>
+    <div class= "event1">
+      <div class= "event1_title">
+          <div class = "event1_title_name"><%= @event_name %></div>
+      </div>
+      <ul div class="drop_bands">
+        <% @title_drop.each do |value| %>
+          <li><%= value %></li>
+        <% end %>
+      </ul>
+      <div class = "flyer">
+        <img src= "/assets/5532434-191205_FLYjpg.jpg"alt="">
+      </div>
+      <div class= "event1_price">
+        <p>OP/ST 18:00/18:30</p>
+        <p>AVD ¥2,300 DOOR ¥2,800</p>
+      </div>
+    </div>
+
+
+    <div class= "event2">
+      <div class= "event2_title">
+        <div class = "event1_title_name"><%= @event_name_beyond %></div>
+      </div>
       <ul div class="byond_bands">
-    <% @title_beyond.each do |value| %>
-      <li><%= value %></li>
-    <% end %>
+        <% @title_beyond.each do |value| %>
+          <li><%= value %></li>
+        <% end %>
       </ul>
       <div class = "flyer">
         <img src= "/assets/138562-191220jpg.jpg"alt=""width="300" height="200">
+      </div>
+      <div class= "event2_price">
+        <p>OP/ST 17:00/17:30</p>
+        <p>AVD ¥2,000 DOOR ¥2,500</p>
+      </div>
     </div>
-    <div class= "event2_price">
-      <p>OP/ST 17:00/17:30</p>
-      <p>AVD ¥2,000 DOOR ¥2,500</p>
-    </div>
-  </div>
 
-
-  <div class= "event3">
+    <div class= "event3">
       <div class= "event3_title">
-       <div class = "event1_title_name"><%= @event_name_varon %></div>
+        <div class = "event1_title_name"><%= @event_name_varon %></div>
       </div>
       <ul div class="varon_bands">
         <% @title_varon.each do |value| %>
           <li><%= value %></li>
         <% end %>
       </ul>
-       <div class = "flyer">
+      <div class = "flyer">
         <img src= "/assets/234131-FIREARROW10thANNIVERSARYjpg.jpg"alt="">
       </div>
       <div class= "event3_price">
         <p>OP/ST 17:00/17:30</p>
         <p>AVD ¥2,200 DOOR ¥2,700</p>
       </div>
+    </div>
   </div>
-</div>
 
+  <footer>
+    <div class="footer_content">
+      <p class="footer_copy">Copyright(C) everywheel. All Rights Researved.</p>
+    </div>
+  </footer>
 </body>
-
-<footer>
-  <div class="footer_content">
-    <p class="footer_copy">Copyright(C) everywheel. All Rights Researved.</p>
-  </div>
-</footer>
-
-
-<!-- ここからここまで -->
