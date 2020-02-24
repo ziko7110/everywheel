@@ -1,13 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>本日のライブ</title>
-<link rel="stylesheet" type="text/css" href="top.css"> -->
-<!-- </head> -->
-
-<!-- ここからメイン -->
-
 <body>
   <header>
     <h1>EVERYWHEEL<span>2019</span></h1>
@@ -16,24 +6,18 @@
     </div>
   </header>
 
-  <!-- 真ん中 -->
      <% if user_signed_in? %>  
   <%= link_to 'URL指定変更', new_post_path,class: "headerlogo" %>
   <h2>TODAY SCHEDULE</h2>
       <%end%>
 
-  <!-- ライブハウス名 -->
   <div class = "livehouses">
     <div class = "livehouse_names">
       <div class = "house1"><a class="drop" href="https://clubdrop.jp/">DROP</a></div>
       <div class = "house2"><a class="beyond" href="https://beyond-osaka.jp/">BEYOND</a></div>
       <div class = "house3"><a class="varon" href="https://osaka-varon.jp/">VARON</a></div>
     </div>
-
-
-
-  <!-- イベント -->
-
+    
   <div class= 'events'>
     <div class= "event1">
       <div class= "event1_title">
@@ -52,8 +36,7 @@
         <p>AVD ¥2,300 DOOR ¥2,800</p>
       </div>
     </div>
-
-
+    
     <div class= "event2">
       <div class= "event2_title">
         <div class = "event1_title_name"><%= @event_name_beyond %></div>
