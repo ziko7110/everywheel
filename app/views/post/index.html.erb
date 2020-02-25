@@ -12,7 +12,7 @@
     </div>
   </header>
 
-
+<div class = contents>
   <h2>TODAY SCHEDULE</h2>
 
   <div class = "livehouses">
@@ -33,11 +33,11 @@
         <% end %>
       </ul>
       <div class = "flyer">
-        <img src= "/assets/5532434-191205_FLYjpg.jpg"alt="">
+      <%= image_tag @image_drop, :alt => '' %>
       </div>
       <div class= "event1_price">
-        <p>OP/ST 18:00/18:30</p>
-        <p>AVD ¥2,300 DOOR ¥2,800</p>
+        <p> OP/ST <%= @opst_drop %></p>
+        <p><%= @price_drop %></p>
       </div>
     </div>
     
@@ -51,11 +51,11 @@
         <% end %>
       </ul>
       <div class = "flyer">
-        <img src= "/assets/138562-191220jpg.jpg"alt=""width="300" height="200">
+     <%= image_tag @image_beyond, :alt => '' %>
       </div>
       <div class= "event2_price">
-        <p>OP/ST 17:00/17:30</p>
-        <p>AVD ¥2,000 DOOR ¥2,500</p>
+        <p>OP/ST <%= @opst_beyond %></p>
+        <p><%= @price_beyond %></p>
       </div>
     </div>
 
@@ -69,15 +69,15 @@
         <% end %>
       </ul>
       <div class = "flyer">
-        <img src= "/assets/234131-FIREARROW10thANNIVERSARYjpg.jpg"alt="">
+     <%= image_tag @image_varon, :alt => '' %>
       </div>
       <div class= "event3_price">
-        <p>OP/ST 17:00/17:30</p>
-        <p>AVD ¥2,200 DOOR ¥2,700</p>
+        <p>OP/ST<%= @opst_varon %></p>
+        <p><%= @price_varon %></p>
       </div>
     </div>
   </div>
-
+<div>
   <footer>
     <div class="footer_content">
       <p class="footer_copy">Copyright(C) everywheel. All Rights Researved.</p>
