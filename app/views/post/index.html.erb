@@ -3,13 +3,14 @@
     <h1>EVERYWHEEL<span>2019</span></h1>
     <div class="nav">
       <a class="inquiry" href=#>問い合わせ</a>
+      <a class="inquiry2" href= '/users/sign_in'>管理者用ページ</a>
     </div>
   </header>
 
-     <% if user_signed_in? %>  
+     <%# <% if user_signed_in? %>   
   <%= link_to 'URL指定変更', new_post_path,class: "headerlogo" %>
   <h2>TODAY SCHEDULE</h2>
-      <%end%>
+      <%# <%end%> 
 
   <div class = "livehouses">
     <div class = "livehouse_names">

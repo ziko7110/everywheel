@@ -33,6 +33,12 @@ a  {
 .inquiry{
   color:white;
   float: right;
+  margin-right: 8px;
+}
+.inquiry2{
+  color:white;
+  float: right;
+  margin-right: 8px;
 }
 .drop{
   display: block;
