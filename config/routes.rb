@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   root 'post#index'
   resources :post
   post 'post/create',to: 'post#create'
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 end

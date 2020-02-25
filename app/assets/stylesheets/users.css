@@ -1,0 +1,15 @@
+.login_header_logo{
+
+  max-width: 760px;
+  margin: 0 auto;
+  height: 100px;
+}
+.login_header{
+  height: 100px;
+  background-color: white;
+}
+.login_contants{
+  max-width: 120px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
