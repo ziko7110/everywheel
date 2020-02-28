@@ -7,7 +7,7 @@ class PostController < ApplicationController
     @title_beyond = Post.get_title(post.beyond_url)
     @event_name_beyond = Post.get_event_name(post.beyond_url)
     @title_varon = Post.get_title(post.varon_url)
-    @event_name_varon = Post.get_event_name(post.drop_url)
+    @event_name_varon = Post.get_event_name(post.varon_url)
     @opst_drop = Post.get_opst(post.drop_url)
     @opst_beyond = Post.get_opst(post.beyond_url)
     @opst_varon = Post.get_opst(post.varon_url)
