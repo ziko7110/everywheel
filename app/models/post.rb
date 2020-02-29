@@ -57,7 +57,6 @@ def self.get_image(url)
   end
   
   doc = Nokogiri::HTML.parse(html, nil, charset)
-    # image.attribute("src").value
     doc.xpath("/html/body/div[1]/div/div[1]/section/div/article/div/div/div[1]/a/img").attribute("src").value
 end
 
