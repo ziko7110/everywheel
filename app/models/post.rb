@@ -60,6 +60,6 @@ def self.get_image(url)
     doc.xpath("/html/body/div[1]/div/div[1]/section/div/article/div/div/div[1]/a/img").attribute("src").value
 end
 
-
+validates :drop_url, :beyond_url, :varon_url, uniqueness: true
 
 end
