@@ -14,5 +14,3 @@
 |varon_url|string|null: false|
 |created_at|string|null: false|
 |update_at|integer|null: false|
-
-
